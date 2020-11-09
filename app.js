@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
 const path = require('path');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const userRouter = require('./routes/user.route');
 
 app.use(express.json());
