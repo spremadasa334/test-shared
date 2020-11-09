@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(236, 236, 236);
+}
+.my-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  min-height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.my-table {
+  background-color: rgb(255, 255, 255);
+  overflow-x: auto;
+  width: 95%;
+  margin: 30px auto 0px auto;
+  padding-bottom: 20px;
+}
+.my-container h2 {
+  padding: 20px 0px;
+  padding-left: 20px;
+  width: 100%;
+  background-color: rgb(61, 61, 255);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#add-user-btn {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.edit-form {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  margin-left: 20px;
+  min-height: 500px;
+  margin-top: 20px;
+}
+.add-form {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  margin-left: 20px;
+  min-height: 500px;
+  margin-top: 20px;
+}
+.my-table th {
+  padding: 10px;
+}
+.my-table td {
+  padding: 7px;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(61, 61, 255);
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

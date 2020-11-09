@@ -1,0 +1,48 @@
+<%- include('../partials/header.ejs') %>
+<title>User Managment Dashboard</title>
+</head>
+<body class="container">
+        <div class="my-container">
+            <h2>Dashboard</h2>
+                <div id="add-user-btn">
+                    <a href="/users/add" class="btn btn-primary" >Add a user</a>
+                </div>
+                <div class="my-table">
+                    <table class="table table-bordered table-hover"> 
+                        <thead class="thead-light">
+                            <th>Rec No#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone No</th>
+                            <th>Edit/Delete</th>
+                        </thead>
+                <% try {%> 
+                <%if(data.length > 0){
+                    for(var i = 0; i < data.length; i++) {%>
+                        <tbody>
+                            <tr>
+                                <td><%= i+1 %></td>
+                                <td><%= data[i].fname %></td>
+                                <td><%= data[i].lname %></td>
+                                <td><%= data[i].email %></td>
+                                <td><%= data[i].pNo %></td>
+                                <td>
+                                    <a href="/users/edit/<%= data[i].id %>"><input type="button" value="Edit" class="btn btn-success"></a>
+                                    <a href="/users/delete/<%= data[i].id %>"><input type="button" value="Delete" class="btn btn-danger"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    <% }}} catch(error) {%>
+                        <tbody style="text-align: center;">
+                            <tr>
+                                <td colspan="6">No records to show</td>
+                            </tr>
+                        </tbody>
+                    <% } %>
+                    </table>
+                </div>
+        </div>
+</body>
+<%- include('../partials/footer.ejs') %>
+</html> 
