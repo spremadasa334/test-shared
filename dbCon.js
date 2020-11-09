@@ -4,11 +4,10 @@ const mysql = require('mysql');
 
 //database connection
 var con = mysql.createConnection({
-  host : process.env.HOST,
-  user : process.env.USER,
-  database : process.env.DB,
-  password : process.env.PWD,
-  
+  host : sql12.freesqldatabase.com,
+  user : sql12375494,
+  database : sql12375494,
+  password : Tu6m9gdmTt
 });
 
 //error checking
