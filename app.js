@@ -37,7 +37,7 @@ app.use(express.static(__dirname + '/public'));
 
 //set routes
 app.get('/', (req,res) => {
-    console.log(process.env.NAME);
+    res.send(process.env.NAME);
 });
 
 app.use('/users', userRouter); 
