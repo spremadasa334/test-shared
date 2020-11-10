@@ -14,6 +14,10 @@ var con = mysql.createConnection({
 try {
   con.connect((err) => {
     if (err) console.log(err);;
+    console.log(process.env.HOST);
+    console.log(process.env.USER);
+    console.log(process.env.DB);
+    console.log(process.env.PWD);
     console.log("mysql Connected!");
 }); 
 } catch (error) {

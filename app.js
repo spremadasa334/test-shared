@@ -1,15 +1,18 @@
-require('dotenv').config();
+require('dotenv/config');
 const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
 const path = require('path');
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
+const cors = require('cors');
 const userRouter = require('./routes/user.route');
+const { send } = require('process');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(cors());
 
 /* start - for flash error and success messages*/
 app.use(cookieParser());
@@ -33,7 +36,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 //set routes
-app.use('/', userRouter);
+app.get('/', (req,res) => {
+    console.log(process.env.NAME);
+});
+
 app.use('/users', userRouter); 
  
 //server creation

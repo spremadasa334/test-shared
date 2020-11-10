@@ -16,7 +16,7 @@ router.get('/edit/:id',(req,res) => {
     const query = "SELECT* FROM users WHERE id = ?";
     con.query(query, id , (err, rows) => {
         if(err) {
-            throw new Error(err);
+            console.log(err);
         }
         else{
             res.render('./pages/editUser', {
