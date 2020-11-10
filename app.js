@@ -35,11 +35,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 //set routes
-app.get('/', (req,res) => {
-    res.send(process.env.DB_NAME);
-    console.log(process.env.NAME);
-});
 
+app.use('/', userRouter);
 app.use('/users', userRouter); 
  
 //server creation
