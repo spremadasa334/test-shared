@@ -12,6 +12,9 @@ const userRouter = require('./routes/user.route');
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
+app.set('views', path.join(__dirname, 'views'));//setting ejs as view files
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));//setting public folder as static file holder
 
 /* start - for flash error and success messages*/
 app.use(cookieParser());
@@ -30,12 +33,7 @@ app.use(function(req, res, next){
 });
 /* end - for flash error and success messages*/
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
-
 //set routes
-
 app.use('/', userRouter);
 app.use('/users', userRouter); 
  
