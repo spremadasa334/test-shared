@@ -4,10 +4,10 @@
 <body>
         <div class="my-container">
             <h2>Dashboard</h2>
+            <div id="add-user-btn">
+                <a href="/users/add" class="btn btn-primary" >Add a user</a>
+            </div>
                 <div class="my-table">
-                    <div id="add-user-btn">
-                        <a href="/users/add" class="btn btn-primary" >Add a user</a>
-                    </div>
                     <table class="table table-bordered table-hover"> 
                         <thead class="thead-light">
                             <th>Rec No#</th>
@@ -43,6 +43,6 @@
                     </table>
                 </div>
         </div>
+        <%- include('../partials/footer.ejs') %>
 </body>
-<%- include('../partials/footer.ejs') %>
 </html> 

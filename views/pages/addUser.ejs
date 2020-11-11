@@ -4,7 +4,7 @@
 <body class="">
     <div class="my-container">
         <h2>Add User Form</h2>
-        <div class="add-form">
+        <div class="my-form">
         <form action="/users/add" method="POST" >
             <div class="form-group label">
                 <label for="fname">First Name</label>
@@ -23,11 +23,11 @@
                 <input type="text" name="pNo" id="pNo" class="form-control" required>
             </div>
             <div class="label">
-            <input type="submit" value="Add" class="btn btn-primary">
+            <input type="submit" value="Add" class="btn btn-primary my-btn">
             </div>
         </form>
-        </div>
+        </div>    
     </div>
+    <%- include('../partials/footer.ejs') %>
 </body>
-<%- include('../partials/footer.ejs') %>
 </html>

@@ -6,7 +6,7 @@
 <body class="">
     <div class="my-container">
         <h2>Edit Form</h2>
-        <div  class="edit-form">
+        <div  class="my-form">
             <form action="/users/edit/<%= id %>" method="POST">
                 <div class="form-group label">
                     <label for="fname">First Name</label>
@@ -25,11 +25,12 @@
                     <input type="text" name="pNo" id="pNo" class="form-control" value="<%= pNo %>">
                 </div>
                 <div class="label">
-                <button type="submit" class="btn btn-primary ">Edit</button>
+                <button type="submit" class="btn btn-primary my-btn">Edit</button>
                 </div>
             </form>
         </div>
     </div>
+    <%- include('../partials/footer.ejs') %>
+
 </body>
-<%- include('../partials/footer.ejs') %>
 </html>

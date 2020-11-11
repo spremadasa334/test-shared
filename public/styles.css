@@ -5,65 +5,55 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: rgb(236, 236, 236);
-  /* width: 100vw; */
+  background-color: white;
 }
 .my-container {
   max-width: 100vw;
-  min-height: 100vh;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 100%;
+  background-color: white;
+  padding-bottom: 20px;
 }
 .my-table {
   background-color: rgb(255, 255, 255);
   overflow-x: auto;
-  width: 90%;
-  margin: 30px auto 0px auto;
+  width: 95%;
+  margin: 30px auto;
   padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .my-container h2 {
   padding: 20px 0px;
   padding-left: 20px;
   width: 100%;
   background-color: rgb(61, 61, 255);
-  color: rgb(255, 255, 255);
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #add-user-btn {
-  margin: 20px 0;
+  margin: 2.5% 0;
+  padding-left: 20px;
 }
-.edit-form {
-  background-color: rgb(255, 255, 255);
-  width: 90%;
+.my-form {
+  background-color: white;
+  width: 50%;
+  padding: 20px;
   margin: 40px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.edit-form .label {
+.my-form .label {
   margin: 30px auto;
-  width: 50%;
-}
-.add-form .label {
-  margin: 30px auto;
-  width: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-  .edit-form .label {
-    margin: 30px auto;
+  .my-form {
     width: 90%;
   }
-  .add-form .label {
+  .my-form .label {
     margin: 30px auto;
-    width: 90%;
   }
 } /*end of media query */
-.my-edit-button {
-  margin: auto;
-}
-.add-form {
-  background-color: rgb(255, 255, 255);
-  width: 90%;
-  margin: 40px auto;
-}
+
 .my-table th {
   padding: 10px;
 }
@@ -75,7 +65,11 @@ body {
   width: 100%;
   background-color: rgb(61, 61, 255);
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
+  margin-top: 20px;
   color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.my-btn {
+  min-width: 20%;
 }
